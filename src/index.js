@@ -4,7 +4,7 @@ const config = require('../config.json');
 const client = new Client({ ws: { intents: 32767 } });
 client.on('ready', () => { 
     console.log('El bot se ha iniciado correctamente');  
-});
+}); 
 
 client.on("guildMemberAdd", member => {
   member.roles.add('852231315037749288');
